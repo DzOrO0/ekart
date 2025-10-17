@@ -26,7 +26,7 @@
   <body class="d-flex flex-column vw-100 vh-100 align-items-center justify-content-center">
     {% block content %}
     <div class="w-75 d-flex flex-column sHADOW justify-content-center align-items-center p-4 ">
-      <h1 style="text-align: center;" class="pb-5">REGISTERATION</h1>
+      <h1 style="text-align: center;" class="pb-5">LOGIN</h1>
         <table class="w-50 shadow p-5">
             <form action="" method="post">
             {% csrf_token %}
@@ -35,22 +35,13 @@
                 <td class="text-end pt"><label for="">UserName</label></td>
                 <td class="pb-3 pt-3">{{form.username}}</td>
             </tr>
+            
             <tr>
-                <td class="text-end"><label for="">Email</label></td>
-                <td class="pb-3">{{form.email}}</td>
+                <td class="text-end"><label for="">Password</label></td>
+                <td class="pb-3">{{form.password}}</td>
             </tr>
-            <tr>
-                <td class="text-end"><label for="">Password1</label></td>
-                <td class="pb-3">{{form.password1}}</td>
-            </tr>
-            <tr>
-                <td  class="text-end"><label for="">password2</label></td>
-                <td class="pb-3">{{form.password2}}</td>
-            </tr>
-            <tr>
-                <td class="text-end"><label for="">Phone</label></td>
-                <td class="pb-3">{{form.phone}}</td>
-            </tr>
+            
+           
             <tr >
                 <td colspan="2">
                     <button type="submit" class="btn btn-primary">SUBMIT</button>
